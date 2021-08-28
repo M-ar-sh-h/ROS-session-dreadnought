@@ -22,10 +22,10 @@ Let's understand it with a simple example...
 
 Now coming to ROS terms,
 
-- **_rosnode_** - Sachin & Carryminati. The publishers and subscribers.
-- **_roscore_** - YouTube. The medium that allows nodes to communicate.
+- **_rosnode_** - Sachin & Carryminati. The publishers and subscribers. They are programmes running inside ROS.
+- **_roscore_** - YouTube. The medium that allows nodes to communicate. We can call it the master node which every node registers itself to.
 - **_rostopic_** - Vines. The topic on which two nodes communicate.
-- **_rosmsg_** - Video or .mp4. The type of message communicated between the nodes.
+- **_rosmsg_** - Video or '.mp4'. The type of message communicated between the nodes.
 
 Enough talk! Let's see a real pubsub programme...
 
