@@ -10,7 +10,7 @@ Now what are nodes?
 
 Let's understand it with a simple example...
 
-![Screenshot-20210828013634-600x313](/home/xox/Documents/Clubs and Teams/Dreadnought/ROS-session-dreadnought/images/Screenshot-20210828013634-600x313.png)
+![Screenshot-20210828013634-600x313](/images/Screenshot-20210828013634-600x313.png)
 
 - **Sachin** and **Carryminati** are two users signed in to **Youtube**.
 - **Sachin** wants to receive **Carryminati**'s videos in his feed and therefore, he **_subscribes_** to **Carryminati**.
@@ -131,7 +131,7 @@ $ rosrun pubsub sachin.py
 
 Our nodes are up and running!
 
-<video src="/home/xox/Documents/Clubs and Teams/Dreadnought/ROS-session-dreadnought/videos/example_node.mp4"></video>
+<video src="/videos/example_node.mp4"></video>
 
 Let's inspect our _nodes_ and _topics_...
 
@@ -140,7 +140,7 @@ $ rosnode list
 $ rostopic list
 ```
 
-![rosseshss](/home/xox/Documents/Clubs and Teams/Dreadnought/ROS-session-dreadnought/images/rosseshss.png)
+![rosseshss](/images/rosseshss.png)
 
 There's a nice way to check how the **nodes** and **topics** are working in a graphical way
 
@@ -148,7 +148,7 @@ There's a nice way to check how the **nodes** and **topics** are working in a gr
 $ rosrun rqt_graph rqt_graph
 ```
 
-​                ![rosseshrqt](/home/xox/Documents/Clubs and Teams/Dreadnought/ROS-session-dreadnought/images/rosseshrqt.png)
+​                ![rosseshrqt](/images/rosseshrqt.png)
 
 And indeed! **_carryminati_** and **_sachin_** are our two **nodes**, and the **topic** they are interacting with each other on is about **_vines_**.
 
