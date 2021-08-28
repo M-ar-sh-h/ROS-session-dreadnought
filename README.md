@@ -44,7 +44,7 @@ $ catkin_create_pkg pubsub std_msgs rospy roscpp
 
 ```catkin_create_pkg``` creates a package named **pubsub** that depends on **_std_msgs_**, **_rospy_** and **_roscpp_**.
 
-Then, we have to build the packages in the **catkin_ws** and soucce the generated setup file to add our workspace to the ROS environment.
+Then, we have to build the packages in the **catkin_ws** and source the generated setup file to add our workspace to the ROS environment.
 
 ```bash
 $ cd ~/catkin_ws
@@ -99,7 +99,7 @@ from std_msgs.msg import String # Importing the String message type
 
 def callback(data): 
     # Declaring a callback function. data is the message we receive from the publisher
-    rospy.loginfo(rospy.get_caller_id() + "I saw %s", data.data) # Printing it to console
+    rospy.loginfo("I saw %s", data.data) # Printing it to console
     
 def viewer():
     rospy.init_node('sachin', anonymous=True) # Intitializing the node
