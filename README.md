@@ -76,6 +76,7 @@ def publish_video():
     while not rospy.is_shutdown(): 
         video = f"Carry's video number {iteration}"
         pub.publish(video) # Publishing the message
+        print(video)
         iteration += 1
         rate.sleep()
 
