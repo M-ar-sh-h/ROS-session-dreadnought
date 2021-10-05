@@ -75,7 +75,7 @@ def publish_video():
     rate = rospy.Rate(1) # Frequency of sent messages. Here 1 means 1Hz
     iteration = 1
     while not rospy.is_shutdown(): 
-        video = "Carry's video number " + str(iteration)
+        video = f"Carry's video number {iteration}"
         pub.publish(video) # Publishing the message
         iteration += 1
         rate.sleep()
@@ -99,7 +99,7 @@ from std_msgs.msg import String # Importing the String message type
 
 def callback(data): 
     # Declaring a callback function. data is the message we receive from the publisher
-    rospy.loginfo("I saw %s", data.data) # Printing it to console
+    print(f"I saw {data.data}") # Printing it to console
     
 def viewer():
     rospy.init_node('sachin', anonymous=True) # Intitializing the node
