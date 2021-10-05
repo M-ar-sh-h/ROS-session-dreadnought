@@ -63,7 +63,6 @@ $ touch carry.py sachin.py
 Open your _carry.py_ file in a text editor, and paste the following code:-
 
 ```python
-# Add your python interpreter path in the next line
 #!/usr/bin/python3
 
 import rospy # Importing the ROS client library for python
@@ -91,7 +90,6 @@ if __name__ == '__main__':
 Next open your _sachin.py_ file in a text editor, and paste the following code:-
 
 ```python
-# Add your python interpreter path in the next line
 #!/usr/bin/python3
 
 import rospy # Importing the ROS client library for python
@@ -148,7 +146,7 @@ There's a nice way to check how the **nodes** and **topics** are working in a gr
 $ rosrun rqt_graph rqt_graph
 ```
 
-​                ![rosseshrqt](/images/rosseshrqt.png)
+![rosseshrqt](/images/rosseshrqt.png)
 
 And indeed! **_carryminati_** and **_sachin_** are our two **nodes**, and the **topic** they are interacting with each other on is about **_vines_**.
 
