@@ -30,8 +30,7 @@ def rotate():
     time.sleep(1)
 
 
-def triangle():
-
+def polygon():
     move.linear.x = 0.0
     move.angular.z = 0.0
     pub.publish(move)
@@ -46,6 +45,6 @@ def triangle():
 
 if __name__ == '__main__':
     try:
-        triangle()
+        polygon()
     except rospy.ROSInterruptException:
         pass
