@@ -37,8 +37,11 @@ def polygon():
     time.sleep(1)
 
     while not rospy.is_shutdown():
-        for _ in range(n):
-            straight()
+        if n>1:
+            for _ in range(n):
+                straight()
+                rotate()
+        else:
             rotate()  
         break    
 
