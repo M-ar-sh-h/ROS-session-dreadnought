@@ -7,7 +7,7 @@ from geometry_msgs.msg import Twist
 
 
 pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=1)
-rospy.init_node('turtle_mad_angle_make_a_triangle', anonymous=False)
+rospy.init_node('turtle_move_like_a_car_cuz_youre_a_star', anonymous=False)
 move = Twist()
 go_straight = 2*(math.pi)*180/360
 # Sum of all angles of a regular star pentagon = 180°
