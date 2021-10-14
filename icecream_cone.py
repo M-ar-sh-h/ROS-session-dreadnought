@@ -58,7 +58,7 @@ def make_icecream():
         move.linear.x = 2.5
         move.angular.z = 2.5
         pub.publish(move)
-        time.sleep(1)
+    time.sleep(1)
         
 
 def icecream():
