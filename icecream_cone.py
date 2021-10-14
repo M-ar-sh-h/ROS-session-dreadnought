@@ -54,15 +54,12 @@ def make_icecream_angle():
 
 
 def make_icecream():
-    move.linear.x = 2.5
-    move.angular.z = 2.5
-    pub.publish(move)
-    time.sleep(1)
-    move.linear.x = 2.5
-    move.angular.z = 2.5
-    pub.publish(move)
-    time.sleep(1)
-
+    for _ in range(2):
+        move.linear.x = 2.5
+        move.angular.z = 2.5
+        pub.publish(move)
+        time.sleep(1)
+        
 
 def icecream():
 
