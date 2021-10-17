@@ -13,7 +13,7 @@ SIDE_LENGTH = 2*(m.pi)*150/360
 TOP_LENGTH = 2*(m.pi)*75/360
 TOPSIDE_ANGLE = 2*(m.pi)*104.95/360
 SIDESIDE_ANGLE = 2*(m.pi)*150/360
-ICECREAM_ANGLE = 2*(m.pi)*330/360
+SCOOP_ANGLE = 2*(m.pi)*330/360
 
 time.sleep(2)
 
@@ -46,14 +46,14 @@ def sidesiderotate():
     time.sleep(1)
 
 
-def make_icecream_angle():
+def scoop_angle():
     move.linear.x = 0.0
-    move.angular.z = ICECREAM_ANGLE
+    move.angular.z = SCOOP_ANGLE
     pub.publish(move)
     time.sleep(1)
 
 
-def make_icecream():
+def make_scoop():
     for _ in range(2):
         move.linear.x = 2.5
         move.angular.z = 2.5
@@ -61,7 +61,7 @@ def make_icecream():
     time.sleep(1)
         
 
-def icecream():
+def make_icecream():
 
     move.linear.x = 0.0
     move.angular.z = 0.0
@@ -76,13 +76,13 @@ def icecream():
         make_side()
         sidesiderotate()
         make_side()
-        make_icecream_angle()
-        make_icecream()
+        scoop_angle()
+        make_scoop()
         break                 
 
 
 if __name__ == '__main__':
     try:
-        icecream()
+        make_icecream()
     except rospy.ROSInterruptException:
         pass
